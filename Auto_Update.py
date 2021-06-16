@@ -33,8 +33,8 @@ def Download_Data(link,i):
     df = df.append(df1,ignore_index = True)
 
 
-Source_list = ["https://www.barchart.com/futures/quotes/KC*0/futures-prices",
-               "https://www.barchart.com/futures/quotes/RM*0/futures-prices"]
+Source_list = ["url_of_your_source_1",
+               "url_of_your_source_2"]
 
 i = 0
 for link in Source_list:
@@ -62,9 +62,9 @@ tabular_table.add_row([df.loc[1, 'Contractname'],df.loc[1, 'Lastprice'],df.loc[1
 print("<> Generating eMail with Data Collected...")
 port = 465
 smtp_server = "smtp.gmail.com"
-sender_email = "python.coders.19@gmail.com"
-receiver_email = "shravanasrao35@gmail.com"
-password = '08255270144'
+sender_email = "sender_mail_id@gmail.com"
+receiver_email = "receiver_mail_id@gmail.com"
+password = 'password'
 
 my_message = tabular_table.get_html_string()
 html = """\
