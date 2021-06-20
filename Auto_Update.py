@@ -33,8 +33,8 @@ def Download_Data(link,i):
     df = df.append(df1,ignore_index = True)
 
 
-Source_list = ["url_of_your_source_1",
-               "url_of_your_source_2"]
+Source_list = ["url_of_source_1",
+               "url_of_source_2"]
 
 i = 0
 for link in Source_list:
